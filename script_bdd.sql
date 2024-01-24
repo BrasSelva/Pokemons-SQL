@@ -36,6 +36,12 @@ CREATE TABLE est_de_type(
     PRIMARY KEY(id_pokemon,id_type)
 );
 
+CREATE TABLE connait_attaque(
+    id_pokemon INT REFERENCES pokemons(id),
+    id_attaque INT REFERENCES attaques(id),
+    PRIMARY KEY(id_pokemon,id_attaque)
+);
+
 INSERT INTO types(nom) VALUES('Feu'), ('Eau'), ('Plante'), ('Electrique'), ('Roche'), ('Vol');
 INSERT INTO dresseur(nom, age, genre) VALUES('Brassica', 21, 'F'), ('Bob', 25, 'H'), ('Charlie', 18, 'N'), ('Jean', 21, 'H'), ('Eva', 30, 'F');
 
@@ -188,10 +194,3 @@ INSERT INTO connait_attaque (id_pokemon, id_attaque) VALUES
 (28, 31), -- Ramoloss connaît l'attaque Pikachu (de type Electrique)
 (29, 32), -- Taupiqueur connaît l'attaque Pikachu (de type Electrique)
 (30, 33); -- Tadmorv connaît
-
-
-CREATE TABLE connait_attaque(
-    id_pokemon INT REFERENCES pokemons(id),
-    id_attaque INT REFERENCES attaques(id),
-    PRIMARY KEY(id_pokemon,id_attaque)
-);
