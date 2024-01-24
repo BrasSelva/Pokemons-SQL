@@ -49,7 +49,7 @@ INSERT INTO pokemons (nom, niveau, exp_en_cours, id_dresseur) VALUES
 ('Bulbizarre', 5, 20, 1),
 ('Salameche', 5, 45, 2),
 ('Carapuce', 5, 10, 3),
-('Pikachu', 6, 80, 4),
+('Pikachu', 6, 80, 3),
 ('Salamèche', 7, 60, 5),
 ('Rattata', 3, 30, 1),
 ('Dracaufeu', 8, 75, 2),
