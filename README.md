@@ -13,3 +13,12 @@ Attention, ces requêtes sont à faire dans l'ordre.
 
 ## Informations
 L'entièreté du projet est consolidé dans le fichier "Projet SQL.docx".
+
+## Back & Front
+Le back et le front sont stokés dans le dossier bonus. Pour les faire fonctionner, il vous suffit d'ouvrir le dossier bonus dans un IDE (Visual studio code). D'ouvrir un terminal à ce chemin et d'exécuter la commande suivante : php -S localhost:8000
+Une fois le serveur php lancé, ouvrez xampp et lancer le serveur Apache et MySql. Si vous êtes sur xampp et que votre login et mot de passe pour la base de donnée sont ceux de base, vous n'avez aucune modification à faire. Dans le cas contraire, rendez-vous dans le dossier bonus/src et venez éditer le fichier db_identifiant.php afin de rentrer vos propres identifiants.
+
+Une fois tout cela fait, entrez l'url suivante dans votre navigateur "localhost:8000/admin/dresseurs/index.php"
+
+## Petite précision 
+Pour que le back et le front fonctionnent correctement, vous devez au préalable avoir éxécuté toutes les requêtes sql et il vous faudra également renommer la colonne "precision" dans la table attaques en "precisions".
